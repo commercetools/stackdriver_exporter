@@ -6,7 +6,7 @@ steps:
   args: ['build']
   env: ['PROJECT_ROOT=github.com/frodenas/stackdriver_exporter', 'CGO_ENABLED=0', 'GOOS=linux']
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:0.5.1-1', '-t', 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:latest', '.' ]
+  args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:0.5.1-2', '-t', 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:latest', '.' ]
 images:
 - 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:latest'
 - 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:0.5.1-2'
