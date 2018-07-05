@@ -4,7 +4,7 @@ steps:
 #   args: ['test']
 - name: 'gcr.io/cloud-builders/go'
   entrypoint: 'echo'
-  args: ['$GOPATH']
+  args: ['\$GOPATH']
 - name: 'gcr.io/cloud-builders/go'
   entrypoint: 'make'
   args: ['crossbuild']
