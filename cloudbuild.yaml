@@ -5,7 +5,7 @@ steps:
 - name: 'gcr.io/cloud-builders/go'
   entrypoint: 'make'
   args: ['crossbuild']
-- name: 'gcr.io/cloud-builders/go'
+- name: 'ubuntu'
   entrypoint: 'ln'
   args: ['-s', '.build/linux-amd64/stackdriver_exporter', 'stackdriver_exporter']
 - name: 'gcr.io/cloud-builders/docker'
