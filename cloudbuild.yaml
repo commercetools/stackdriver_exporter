@@ -9,4 +9,4 @@ steps:
   args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:0.5.1-1', '-t', 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:latest', '.' ]
 images:
 - 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:latest'
-- 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:0.5.1-1'
+- 'eu.gcr.io/$PROJECT_ID/stackdriver-exporter:0.5.1-2'
