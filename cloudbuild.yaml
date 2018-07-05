@@ -3,9 +3,11 @@ steps:
 #  entrypoint: 'make'
 #   args: ['test']
 - name: 'gcr.io/cloud-builders/go'
+  entrypoint: 'echo'
+  args: ['$GOPATH']
+- name: 'gcr.io/cloud-builders/go'
   entrypoint: 'make'
   args: ['crossbuild']
-  env: ['GOPATH=.']
 - name: 'ubuntu'
   entrypoint: 'ln'
   args: ['-s', '.build/linux-amd64/stackdriver_exporter', 'stackdriver_exporter']
