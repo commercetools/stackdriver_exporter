@@ -1,5 +1,5 @@
 GO     := go
-GINKGO := ginkgo
+GINKGO := $(GOPATH)/bin/ginkgo
 PROMU  := $(GOPATH)/bin/promu
 pkgs   = $(shell $(GO) list ./... | grep -v /vendor/)
 

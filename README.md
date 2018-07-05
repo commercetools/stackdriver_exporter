@@ -24,22 +24,7 @@ $ stackdriver_exporter <flags>
 To run the stackdriver exporter as a Docker container, run:
 
 ```bash
-$ docker run -p 9255:9255 frodenas/stackdriver-exporter <flags>
-```
-
-### Cloud Foundry
-
-The exporter can be deployed to an already existing [Cloud Foundry][cloudfoundry] environment:
-
-```bash
-$ git clone https://github.com/commercetools/stackdriver_exporter.git
-$ cd stackdriver_exporter
-```
-
-Modify the included [application manifest file][manifest] to include the desired properties. Then you can push the exporter to your Cloud Foundry environment:
-
-```bash
-$ cf push
+$ docker run -p 9255:9255 eu.gcr.io/ctp-staging/stackdriver-exporter <flags>
 ```
 
 ## Usage

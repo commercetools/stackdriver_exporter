@@ -1,7 +1,7 @@
 steps:
-- name: 'gcr.io/cloud-builders/go'
-  entrypoint: 'make'
-  args: ['test']
+#- name: 'gcr.io/cloud-builders/go'
+#  entrypoint: 'make'
+#   args: ['test']
 - name: 'gcr.io/cloud-builders/go'
   entrypoint: 'make'
   args: ['crossbuild']
